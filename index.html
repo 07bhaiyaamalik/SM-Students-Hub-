@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="SM Students Hub - notes, question papers, quizzes and useful tools for every student.">
+  <title>SM Students Hub | Learn Together. Grow Together.</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icons/icon-192.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="SM Students Hub home">
+      <span class="brand-mark">SM</span>
+      <span>Students <b>Hub</b></span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#resources">Resources</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Switch theme" title="Switch theme">☀</button>
+      <button class="menu-btn" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">YOUR LEARNING COMPANION</span>
+        <h1>Learn Together.<br><span>Grow Together.</span></h1>
+        <p>Study resources, practice tools and learning support for students of every class — all in one place.</p>
+        <a class="primary-btn" href="#resources">Explore resources <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="book-card"><span>📘</span><strong>Keep learning</strong><small>One step at a time</small></div>
+        <div class="float-chip chip-one">✦ Study smarter</div>
+        <div class="float-chip chip-two">✓ Your goals matter</div>
+      </div>
+    </section>
+
+    <section class="search-wrap" aria-label="Search learning resources">
+      <div class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search notes, papers, quizzes and tools..." autocomplete="off">
+        <kbd>SEARCH</kbd>
+      </div>
+      <p id="searchMessage" class="search-message" aria-live="polite"></p>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="section-heading">
+        <div><span class="eyebrow">EXPLORE THE HUB</span><h2>Everything you need to learn</h2></div>
+        <p>Choose a category to get started.</p>
+      </div>
+      <div class="resource-grid" id="resourceGrid">
+        <a class="resource-card" href="#study-materials" data-search="study materials notes books pdf">
+          <span class="card-icon purple">📚</span><h3>Study Materials</h3><p>Notes, books and learning resources.</p><span class="card-link">Explore <b>↗</b></span>
+        </a>
+        <a class="resource-card" href="#classes" data-search="classes school class 1 12">
+          <span class="card-icon blue">🎓</span><h3>Classes 1–12</h3><p>Learning resources for school students.</p><span class="card-link">Explore <b>↗</b></span>
+        </a>
+        <a class="resource-card" href="#college" data-search="college diploma engineering degree">
+          <span class="card-icon orange">🏛️</span><h3>College & Diploma</h3><p>Resources for college and engineering.</p><span class="card-link">Explore <b>↗</b></span>
+        </a>
+        <a class="resource-card" href="#papers" data-search="question papers previous year model solutions">
+          <span class="card-icon green">📝</span><h3>Question Papers</h3><p>Previous papers and practice sets.</p><span class="card-link">Explore <b>↗</b></span>
+        </a>
+        <a class="resource-card" href="#practicals" data-search="practicals journal experiments">
+          <span class="card-icon pink">🧪</span><h3>Practicals</h3><p>Experiments, journals and procedures.</p><span class="card-link">Explore <b>↗</b></span>
+        </a>
+        <a class="resource-card" href="#quiz" data-search="quiz mcq test practice">
+          <span class="card-icon yellow">🧠</span><h3>Online Quiz</h3><p>Practice questions and test yourself.</p><span class="card-link">Explore <b>↗</b></span>
+        </a>
+        <a class="resource-card" href="#tools" data-search="student tools calculator percentage converter">
+          <span class="card-icon blue">🧮</span><h3>Student Tools</h3><p>Useful calculators and study utilities.</p><span class="card-link">Explore <b>↗</b></span>
+        </a>
+        <a class="resource-card" href="#planner" data-search="study planner timetable schedule">
+          <span class="card-icon purple">📅</span><h3>Study Planner</h3><p>Organise your timetable and goals.</p><span class="card-link">Explore <b>↗</b></span>
+        </a>
+        <a class="resource-card" href="#scholarships" data-search="scholarships financial aid schemes">
+          <span class="card-icon green">🎖️</span><h3>Scholarships</h3><p>Find scholarship information and links.</p><span class="card-link">Explore <b>↗</b></span>
+        </a>
+        <a class="resource-card" href="#coding" data-search="coding programming html css javascript python">
+          <span class="card-icon orange">💻</span><h3>Coding Zone</h3><p>Start learning programming step by step.</p><span class="card-link">Explore <b>↗</b></span>
+        </a>
+      </div>
+      <div class="empty-state" id="emptyState" hidden>No matching categories. Try another search.</div>
+    </section>
+
+    <section class="welcome-panel" id="about">
+      <div><span class="eyebrow">ABOUT OUR PROJECT</span><h2>A better way to learn.</h2>
+      <p>SM Students Hub is a student-focused learning platform. We're building a simple place to discover study materials, practise skills and stay organised.</p></div>
+      <div class="welcome-stat"><strong>One Hub</strong><span>For every learner</span></div>
+    </section>
+
+    <section class="section quick-links" aria-label="Coming soon">
+      <div class="section-heading"><div><span class="eyebrow">COMING NEXT</span><h2>More ways to learn</h2></div></div>
+      <div class="coming-grid">
+        <div><b>01</b><strong>My Account</strong><span>Personal dashboard and bookmarks</span></div>
+        <div><b>02</b><strong>Progress Tracker</strong><span>Keep track of your learning goals</span></div>
+        <div><b>03</b><strong>Community</strong><span>Learn and share with other students</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">SM</span><span>Students <b>Hub</b></span></a>
+    <p>Learn Together. Grow Together.</p>
+    <small>Made with care by the SM Students Hub team · © <span id="year"></span></small>
+  </footer>
+
+  <button class="install-btn" id="installButton" hidden>＋ Install app</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
